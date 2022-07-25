@@ -7,7 +7,7 @@ def quick_sort(arr, start, end):
             arr[left], arr[right] = arr[right], arr[left]
         if arr[left] <= arr[pivot]:
             left += 1
-        if arr[right] > arr[pivot]:
+        if arr[right] >= arr[pivot]:
             right -= 1
 
     arr[pivot], arr[right] = arr[right], arr[pivot]
