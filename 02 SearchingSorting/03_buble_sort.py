@@ -9,7 +9,6 @@ while not is_sorted:
         if nums[idx] > nums[idx + 1]:
             nums[idx], nums[idx + 1] = nums[idx + 1], nums[idx]
             is_sorted = False
-
     i += 1
 
 print(*nums, sep=' ')
